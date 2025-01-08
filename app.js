@@ -12,6 +12,15 @@ let selctedDate = new Date()
 const moodData = json.parse(localstorage.getitem('moodData')) || {};
 
 function saveMoodData () {
+  const firstDay = new Date (currentDate.getFullYear(), currentDate.getmonth (), 1);
+  const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+  const startingDay = firstDay.getDay();
+
+
+  
+  const secondDay = 
+
+
 }
 
 
