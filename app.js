@@ -22,9 +22,16 @@ function saveMoodData () {
     calendarGrid.innerHTML = '';
 
 
+  for (let i = 0; i < startingDay; i++) {
+        const emptyDay = document.createElement('div');
+        emptyDay.className = 'calendar-day';
+        calendarGrid.appendChild(emptyDay);
+    }
+
+
 
   
-  const secondDay = 
+
 
 
 }
