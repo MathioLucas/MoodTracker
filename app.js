@@ -16,6 +16,12 @@ function saveMoodData () {
   const lastDay = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
   const startingDay = firstDay.getDay();
 
+  document.getElementById('monthYear').textContent = 
+        firstDay.toLocaleString('default', { month: 'long', year: 'numeric' });
+  const calendarGrid = document.getElementById('calendarGrid');
+    calendarGrid.innerHTML = '';
+
+
 
   
   const secondDay = 
