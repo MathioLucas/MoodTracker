@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Mood Tracker</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Daily Mood Tracker</h1>
+  </header>
+
+  <main>
+    <!-- Mood Logging Section -->
+    <section id="mood-logger">
+      <h2>Log Your Mood</h2>
+      <form id="mood-form">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="mood">Mood:</label>
+        <select id="mood" required>
+          <option value="">Select your mood</option>
+          <option value="happy">😊 Happy</option>
+          <option value="sad">😢 Sad</option>
+          <option value="excited">🤩 Excited</option>
+          <option value="angry">😠 Angry</option>
+          <option value="neutral">😐 Neutral</option>
+          
+        </select>
+
+        <label for="note">Note (optional):</label>
+        <textarea id="note" rows="3" placeholder="Add a reflection..."></textarea>
+
+        <button type="submit">Save Mood</button>
+      </form>
+    </section>
+
+    <!-- Calendar View Section -->
+    <section id="calendar-view">
+      <h2>Mood Calendar</h2>
+      <div id="calendar"></div>
+    </section>
+
+    <!-- Mood Statistics Section -->
+    <section id="mood-stats">
+      <h2>Mood Statistics</h2>
+      <canvas id="moodChart"></canvas>
+    </section>
+  </main>
+
+
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
