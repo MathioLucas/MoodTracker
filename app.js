@@ -6,6 +6,14 @@ const moodColors = {
   angry:'#FF6347'
   }
 
+let currenaDate = new Date()
+let selctedDate = new Date()
+
+const moodData = json.parse(localstorage.getitem('moodData')) || {};
+
+function saveMoodData () {
+}
+
 
 
 
